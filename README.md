@@ -6,7 +6,7 @@
 Some input image we provide
 
 ```
-![alt text](https://https://github.com/RichardoTiono/Original_Face_Recovery/tree/main/sample_result/result/21_0_b_mask.png?raw=true)
+![alt text](https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/21_0_b_mask.png)
 
 ### Result
 ```
