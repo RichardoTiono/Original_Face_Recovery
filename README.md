@@ -6,12 +6,15 @@
 ├─── generate_dataset_csv.py: generate csv given dataset directory <br>
 ├─── interpolate.py: Create interpolation result from provided image directory <br>
 ├─── main_gen_pseudo-data.py: Train Skip-Connection based network on Synthetic dataset and generate Pseudo-Supervision data for CelebA dataset<br>
-├─── main_gen_synthetic_and_full.py: Train on synthetic data, generate pseudo-supervision data, train on mix data<br>
-├─── main_mix_training.py: Train SfSNet on mix data. Need to provide both CelebA and Synthetic dataset directory<br>
+├─── main_gen_synthetic_and_full.py: Train on synthetic data, generate pseudo-supervision data, train on mix data ss<br>
+├─── main_mix_training.py: Train SfSNet on mix data. Need to provide both CelebA and Synthetic dataset directory <br>
 ├─── main_light_training.py: Train or test Light Removal Network. Need to provide both Real and Synthetic dataset directory<br>
 ├─── models.py: Definition of all the models used. Skip-Net and SfSNet <br>
 ├─── train.py: Train and test rountines <br>
 ├─── utils.py: Help rountines <br>
+├─── black2white.py: Changes black background of images into white background <br>
+├─── create_mask.py: Create mask from original images <br>
+├─── masking.py: Apply mask genearted from create_mask.py to original image <br>
 ```
 
 ## Usage of main_light_training to train and test the model
