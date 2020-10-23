@@ -1,5 +1,18 @@
 # Original_Face_Recovery
 
+## Result
+### Input
+```
+Some input image we provide
+![alt text](https://https://github.com/RichardoTiono/Original_Face_Recovery/tree/main/sample_result/result/21_0_b_mask.png?raw=true)
+```
+
+### Result
+```
+
+```
+
+
 ## Source Description
 ```
 ├─── data_loading.py: data loading and pre-processing methods <br>
@@ -52,4 +65,7 @@ optional arguments:
                         'or Visualization (visuale each convolution output in grayscale)
 ```
 
+## Guidelines
+```
 
+```
