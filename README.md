@@ -77,6 +77,8 @@ Infer using pretrained network
 ```
 python main_light_training --mode Infer --sample_data /path/to/your/data --load_model /path/to/pretrained/network/
 ```
+3. run black2white.py if you want white background
+4. run ContrastEnhancer to do post-processing
 
 Train with new dataset
 if the new dataset still has background, do pre-processing first. This is the steps for pre-processing :
