@@ -1,13 +1,13 @@
 # Original_Face_Recovery
 
 ## Sample Result
-Input Sample
+Input Sample <br>
 <img  width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/21_0_b_mask.png"/>
 <img  width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/22_1_b_mask.png"/>
 <img  width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/25_4_r_mask.png"/>
 <img width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/26_2_g_mask.png"/>
 
-Generated Sample
+Generated Sample <br />
 <img  width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/21_0_b_mask.png">
 <img width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/22_0_b_mask.png">
 <img width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/25_4_r_mask.png">
