@@ -3,15 +3,15 @@
 ## Sample Result
 ### Input
 <img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/21_0_b_mask.png">
-<img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/22_0_b_mask.png">
+<img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/22_1_b_mask.png">
 <img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/25_4_r_mask.png">
-<img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/26_2_g_mask.png"><br/>
+<img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/input/26_2_g_mask.png"><br />
 
 ### Generated image
 <img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/21_0_b_mask.png">
 <img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/22_0_b_mask.png">
 <img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/25_4_r_mask.png">
-<img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/26_2_g_mask.png"><br/>
+<img align="left" width="100" height="100" src="https://github.com/RichardoTiono/Original_Face_Recovery/blob/main/sample_result/result/26_2_g_mask.png"><br />
 
 ## Source Description
 ```
