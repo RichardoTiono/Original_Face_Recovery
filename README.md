@@ -1,4 +1,6 @@
 # Original_Face_Recovery
+Deep learning implementation for recovering the original skin color of face images that under color lighting
+
 
 ## Sample Result
 Input Sample <br>
@@ -28,6 +30,7 @@ Generated Sample <br />
 ├─── black2white.py: Changes black background of images into white background <br>
 ├─── create_mask.py: Create mask from original images <br>
 ├─── masking.py: Apply mask genearted from create_mask.py to original image <br>
+├─── ContrastEnhancer.ipynb: Apply post processing to the generated image <br>
 ```
 
 ## Usage of main_light_training to train and test the model
@@ -58,7 +61,8 @@ optional arguments:
                         We perform many experiments and then get lost on the results and what was this experiment for.
                         This txt file will help us understand what was the purpose of this experiment
   --sample_data         Sample Dataset path - Data for testing/inferring with your pretrained network
-  --rgb_syn_data        RGB Real Dataset path
+  --rgb_syn_data        Path to RGB synthetic Dataset csv file
+  --rgb_real_data		Path to RGB real Dataset csv file
   --log_dir             Log Path
   --load_model          Path for Existing Pretrained Network
   --mode                Choose mode for doing Train-rgb (Training Network) or metrics(test using metrics) or Infer (Infer pretrained network) '
@@ -66,6 +70,22 @@ optional arguments:
 ```
 
 ## Guidelines
+
+Infer using pretrained network
+1. Download the pretrained model using [link](https://drive.google.com/drive/folders/1FcthqkhLtdfMm7hYgNISGYntez1YNXKr?usp=sharing)
+2. run the main_light_training code
+```
+python main_light_training --mode Infer --sample_data /path/to/your/data --load_model /path/to/pretrained/network/
 ```
 
+Train with new dataset
+if the new dataset still has background, do pre-processing first. This is the steps for pre-processing :
+1. run create_mask.py to create mask for the new dataset
+2. run masking.py to apply those mask to the new dataset
+
+if the new dataset is cleaned :
+1. run generate_dataset_csv on the new dataset for both synthetic and real dataset seperately 
+2. run the main_light_training code
+```
+python main_light_training --mode Train-rgb --rgb_syn_data /path/to/your/new/synthetic_data_csv --rgb_real_data /path/to/your/new/real_data_csv
 ```
