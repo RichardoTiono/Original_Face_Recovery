@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainwindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.setEnabled(True)
+        MainWindow.resize(834, 262)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.verticalLayout_5.addWidget(self.label)
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setMaximumSize(QtCore.QSize(16777215, 400))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame)
+        self.verticalLayout_4.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.gridLayout_3 = QtWidgets.QGridLayout()
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.browseFacebtn = QtWidgets.QPushButton(self.frame)
+        self.browseFacebtn.setObjectName("browseFacebtn")
+        self.gridLayout_3.addWidget(self.browseFacebtn, 0, 2, 1, 1)
+        self.browseLine = QtWidgets.QLineEdit(self.frame)
+        self.browseLine.setEnabled(False)
+        self.browseLine.setReadOnly(False)
+        self.browseLine.setObjectName("browseLine")
+        self.gridLayout_3.addWidget(self.browseLine, 0, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_3.addWidget(self.label_2, 0, 0, 1, 1)
+        self.verticalLayout_4.addLayout(self.gridLayout_3)
+        self.extractLightbtn = QtWidgets.QPushButton(self.frame)
+        self.extractLightbtn.setObjectName("extractLightbtn")
+        self.verticalLayout_4.addWidget(self.extractLightbtn)
+        self.gridLayout_4 = QtWidgets.QGridLayout()
+        self.gridLayout_4.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.gridLayout_4.setVerticalSpacing(6)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.saveResultLightbtn = QtWidgets.QPushButton(self.frame)
+        self.saveResultLightbtn.setObjectName("saveResultLightbtn")
+        self.gridLayout_4.addWidget(self.saveResultLightbtn, 2, 1, 1, 1)
+        self.oriDisplay = QtWidgets.QLabel(self.frame)
+        self.oriDisplay.setText("")
+        self.oriDisplay.setObjectName("oriDisplay")
+        self.gridLayout_4.addWidget(self.oriDisplay, 1, 0, 1, 1)
+        self.resultDisplay = QtWidgets.QLabel(self.frame)
+        self.resultDisplay.setText("")
+        self.resultDisplay.setObjectName("resultDisplay")
+        self.gridLayout_4.addWidget(self.resultDisplay, 1, 1, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.frame)
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_4.addWidget(self.label_8, 0, 0, 1, 1)
+        self.label_9 = QtWidgets.QLabel(self.frame)
+        self.label_9.setObjectName("label_9")
+        self.gridLayout_4.addWidget(self.label_9, 0, 1, 1, 1)
+        self.saveOriLightbtn = QtWidgets.QPushButton(self.frame)
+        self.saveOriLightbtn.setObjectName("saveOriLightbtn")
+        self.gridLayout_4.addWidget(self.saveOriLightbtn, 2, 0, 1, 1)
+        self.verticalLayout_4.addLayout(self.gridLayout_4)
+        self.verticalLayout_5.addWidget(self.frame)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Light Extraction Section"))
+        self.browseFacebtn.setText(_translate("MainWindow", "Browse"))
+        self.label_2.setText(_translate("MainWindow", "Face Image"))
+        self.extractLightbtn.setText(_translate("MainWindow", "Begin Extraction"))
+        self.saveResultLightbtn.setText(_translate("MainWindow", "Save Result"))
+        self.label_8.setText(_translate("MainWindow", "Original Image"))
+        self.label_9.setText(_translate("MainWindow", "Result Image"))
+        self.saveOriLightbtn.setText(_translate("MainWindow", "Save Ori Result"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
